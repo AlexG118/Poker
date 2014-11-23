@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{896BE2E5-1B95-4F39-95AC-686924BF3D10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Poker1.My.MyApplication</StartupObject>
+    <RootNamespace>Poker1</RootNamespace>
+    <AssemblyName>Poker1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Poker1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Poker1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Carta.vb" />
+    <Compile Include="CartaJuego.vb" />
+    <Compile Include="CartaProg.vb" />
+    <Compile Include="CartasBaraja.vb" />
+    <Compile Include="Contabilidad.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tablero.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Recursos\Test.ttf" />
+    <None Include="Recursos\VideoPhreak.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\bigwin2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\bling.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\C10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\cardDealt.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CC11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CC12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CC13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CD11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CD12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CD13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CH11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CH12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CH13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\ChaChing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CS12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\CS13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\D10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Deal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\DealCard.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\DeckClassic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\DeckHearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Draw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\H10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HC11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HC12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HC13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HD11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HD12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HD13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HH11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HH12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HH13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\hint.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HS12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\HS13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\lose.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\no.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\S10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SC11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SC12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SC13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SD11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SD12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SD13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SeasonsDeck.Png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SH11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SH12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SH13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\shuffle.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SS11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SS12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\SS13.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
