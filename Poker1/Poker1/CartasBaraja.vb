@@ -5,6 +5,7 @@
     Public AsDePicas, DosDePicas, TresDePicas, CuatroDePicas, CincoDePicas, SeisDePicas, SieteDePicas, OchoDePicas, NueveDePicas, DiezDePicas, SotaDePicas, ReinaDePicas, ReyDePicas As Image
     Public DeckCard As Image
     Public DeckFamily As DeckDesign
+    Public Strippoker As Boolean = False
     Sub New(ByVal _DeckFamily As DeckDesign)
         SetCommonCards()
         DeckFamily = _DeckFamily
@@ -24,6 +25,24 @@
                 ReinaDeTreboles = My.Resources.SC12 : ReinaDeDiamantes = My.Resources.SD12 : ReinaDeCorazones = My.Resources.SH12 : ReinaDePicas = My.Resources.SS12
                 ReyDeTreboles = My.Resources.SC13 : ReyDeDiamantes = My.Resources.SD13 : ReyDeCorazones = My.Resources.SH13 : ReyDePicas = My.Resources.SS13
                 DeckCard = My.Resources.SeasonsDeck
+            Case DeckDesign.StripPoker
+                'If Strippoker = True Then
+                SotaDeTreboles = My.Resources.SPC11 : SotaDeDiamantes = My.Resources.SPD11 : SotaDeCorazones = My.Resources.SPH11 : SotaDePicas = My.Resources.SPS11
+                ReinaDeTreboles = My.Resources.SPC12 : ReinaDeDiamantes = My.Resources.SPC12 : ReinaDeCorazones = My.Resources.SPC12 : ReinaDePicas = My.Resources.SPC12
+                ReyDeTreboles = My.Resources.SPC13 : ReyDeDiamantes = My.Resources.SPC13 : ReyDeCorazones = My.Resources.SPC13 : ReyDePicas = My.Resources.SPC13
+                DeckCard = My.Resources.StripPokerDeck
+                ' Else
+                My.Computer.Audio.Play(My.Resources.no, AudioPlayMode.Background)
+                'End If
+            Case DeckDesign.LOTRPoker
+                'If Strippoker = True Then
+                SotaDeTreboles = My.Resources.LC11 : SotaDeDiamantes = My.Resources.LD11 : SotaDeCorazones = My.Resources.LH11 : SotaDePicas = My.Resources.LS11
+                ReinaDeTreboles = My.Resources.LC12 : ReinaDeDiamantes = My.Resources.LD12 : ReinaDeCorazones = My.Resources.LC12 : ReinaDePicas = My.Resources.LS12
+                ReyDeTreboles = My.Resources.LC13 : ReyDeDiamantes = My.Resources.LD13 : ReyDeCorazones = My.Resources.LC13 : ReyDePicas = My.Resources.LS13
+                DeckCard = My.Resources.LOTRDeck
+                ' Else
+                My.Computer.Audio.Play(My.Resources.no, AudioPlayMode.Background)
+                'End If
         End Select
     End Sub
     Sub SetCommonCards()
@@ -52,6 +71,8 @@
         Classic
         Corazones
         Seasons
+        StripPoker
+        LOTRPoker
     End Enum
 
 End Class

@@ -5,7 +5,7 @@ Public Class Form1
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         MyBank = New Contabilidad(Label3)
-        MyBank.InsertMoney(Contabilidad.BetIncrememt.Hundred)
+        Form2.Show()
         Panel1.SendToBack()
         Panel1.BackColor = Color.FromArgb(64, Panel1.BackColor.R, Panel1.BackColor.G, Panel1.BackColor.B)
         Label3.BackColor = Color.Transparent
@@ -37,8 +37,8 @@ Public Class Form1
         Dim CartaJuego As New CartaJuego(SelectedDeck)
         CurrentCartaJuego = CartaJuego
     End Sub
-    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbClassicSelect.Click, pbHeartsSelect.Click, pbSeasonsSelect.Click
-        UpdateSelection(sender, pbClassicSelect, pbHeartsSelect, pbSeasonsSelect)
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbClassicSelect.Click, pbHeartsSelect.Click, pbSeasonsSelect.Click, pbStripPokerSelect.Click, pbLOTRSelect.Click
+        UpdateSelection(sender, pbClassicSelect, pbHeartsSelect, pbSeasonsSelect, pbStripPokerSelect, pbLOTRSelect)
     End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         If CurrentCartaJuego.JuegoEnProceso = True Then
@@ -48,7 +48,7 @@ Public Class Form1
                 Case True
                     CurrentCartaJuego.NextAction(SelectedDeck, Label1, Button1)
                 Case False
-                    Label1.Text = "Vete a casa"
+                    Label1.Text = "Vete a casa, has gastado todo"
                     My.Computer.Audio.Play(My.Resources.no, AudioPlayMode.Background)
             End Select
         End If
@@ -58,17 +58,15 @@ Public Class Form1
     Private Sub pbInsert(ByVal sender As System.Object, ByVal e As MouseEventArgs)
         Dim TargetValue As Double
         Dim ExpandMode As Integer = 0
-        Dim TargetIncrement As Contabilidad.BetIncrememt
-        
+        Dim TargetIncrement As Contabilidad.BetIncrement1
 
         Select Case TargetIncrement
-            Case Contabilidad.BetIncrememt.Hundred : TargetValue = 100
-            Case Contabilidad.BetIncrememt.Fifty : TargetValue = 50
-            Case Contabilidad.BetIncrememt.Twenty : TargetValue = 20
-            Case Contabilidad.BetIncrememt.Ten : TargetValue = 10
-            Case Contabilidad.BetIncrememt.Five : TargetValue = 5
-            Case Contabilidad.BetIncrememt.Two : TargetValue = 2
-            Case Contabilidad.BetIncrememt.One : TargetValue = 1
+            Case Contabilidad.BetIncrement1.Cien : TargetValue = 100
+            Case Contabilidad.BetIncrement1.Cincuenta : TargetValue = 50
+            Case Contabilidad.BetIncrement1.Veinte : TargetValue = 20
+            Case Contabilidad.BetIncrement1.Diez : TargetValue = 10
+            Case Contabilidad.BetIncrement1.Cinco : TargetValue = 5
+            Case Contabilidad.BetIncrement1.Uno : TargetValue = 1
         End Select
         If TargetValue + MyBank.Credits > 100 Then
             MyBank.InsertMoney(TargetIncrement)
@@ -80,7 +78,6 @@ Public Class Form1
         DirectCast(sender, PictureBox).Height = DirectCast(sender, PictureBox).Height + 8
         DirectCast(sender, PictureBox).Invalidate()
 
-        'MyBank.InsertMoney(Contabilidad.BetIncrememt.Hundred)
     End Sub
 
     Private Sub pbMouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs)
@@ -93,7 +90,7 @@ Public Class Form1
         DirectCast(sender, PictureBox).SendToBack()
     End Sub
 
-    
+
 
     Private Sub Bet_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnIncreaseBet.Click, btnDecreaseBet.Click
         If CurrentCartaJuego.JuegoEnProceso Then My.Computer.Audio.Play(My.Resources.no, AudioPlayMode.Background) : Exit Sub
@@ -101,31 +98,32 @@ Public Class Form1
         Select Case DirectCast(sender, Button).Name
             Case btnIncreaseBet.Name
                 Select Case BetCreditQuantity
-                    Case 5
-                        BetCreditQuantity = 1
-                    Case 4
+                    Case 100
                         BetCreditQuantity = 5
-                    Case 3
-                        BetCreditQuantity = 4
-                    Case 2
-                        BetCreditQuantity = 3
-                    Case 1
-                        BetCreditQuantity = 2
+                    Case 50
+                        BetCreditQuantity = 100
+                    Case 20
+                        BetCreditQuantity = 50
+                    Case 10
+                        BetCreditQuantity = 20
+                    Case 5
+                        BetCreditQuantity = 10
                 End Select
             Case btnDecreaseBet.Name
                 Select Case BetCreditQuantity
-                    Case 5
-                        BetCreditQuantity = 4
-                    Case 4
-                        BetCreditQuantity = 3
-                    Case 3
-                        BetCreditQuantity = 2
-                    Case 2
-                        BetCreditQuantity = 1
-                    Case 1
+                    Case 100
+                        BetCreditQuantity = 50
+                    Case 50
+                        BetCreditQuantity = 20
+                    Case 20
+                        BetCreditQuantity = 10
+                    Case 10
                         BetCreditQuantity = 5
+                    Case 5
+                        BetCreditQuantity = 100
                 End Select
         End Select
         Label7.Text = CStr(BetCreditQuantity)
     End Sub
+
 End Class

@@ -35,10 +35,15 @@ Partial Class Form1
         Me.pbSeasonsSelect = New System.Windows.Forms.PictureBox()
         Me.pbHeartsSelect = New System.Windows.Forms.PictureBox()
         Me.pbClassicSelect = New System.Windows.Forms.PictureBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.pbStripPokerSelect = New System.Windows.Forms.PictureBox()
+        Me.pbLOTRSelect = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.pbSeasonsSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbHeartsSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbClassicSelect, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbStripPokerSelect, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbLOTRSelect, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label6
@@ -58,9 +63,9 @@ Partial Class Form1
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(696, 635)
+        Me.Label7.Location = New System.Drawing.Point(674, 635)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 39)
+        Me.Label7.Size = New System.Drawing.Size(95, 39)
         Me.Label7.TabIndex = 32
         Me.Label7.Text = "5"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -86,7 +91,7 @@ Partial Class Form1
         Me.btnDecreaseBet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnDecreaseBet.FlatAppearance.BorderSize = 0
         Me.btnDecreaseBet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDecreaseBet.Location = New System.Drawing.Point(643, 635)
+        Me.btnDecreaseBet.Location = New System.Drawing.Point(615, 635)
         Me.btnDecreaseBet.Name = "btnDecreaseBet"
         Me.btnDecreaseBet.Size = New System.Drawing.Size(53, 39)
         Me.btnDecreaseBet.TabIndex = 30
@@ -181,6 +186,39 @@ Partial Class Form1
         Me.pbClassicSelect.TabIndex = 34
         Me.pbClassicSelect.TabStop = False
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(447, 635)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 39
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'pbStripPokerSelect
+        '
+        Me.pbStripPokerSelect.BackgroundImage = Global.Poker1.My.Resources.Resources.StripPokerDeck
+        Me.pbStripPokerSelect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbStripPokerSelect.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbStripPokerSelect.InitialImage = Nothing
+        Me.pbStripPokerSelect.Location = New System.Drawing.Point(122, 12)
+        Me.pbStripPokerSelect.Name = "pbStripPokerSelect"
+        Me.pbStripPokerSelect.Size = New System.Drawing.Size(57, 75)
+        Me.pbStripPokerSelect.TabIndex = 40
+        Me.pbStripPokerSelect.TabStop = False
+        '
+        'pbLOTRSelect
+        '
+        Me.pbLOTRSelect.BackgroundImage = Global.Poker1.My.Resources.Resources.LOTRDeck
+        Me.pbLOTRSelect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbLOTRSelect.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.pbLOTRSelect.InitialImage = Nothing
+        Me.pbLOTRSelect.Location = New System.Drawing.Point(152, 12)
+        Me.pbLOTRSelect.Name = "pbLOTRSelect"
+        Me.pbLOTRSelect.Size = New System.Drawing.Size(57, 75)
+        Me.pbLOTRSelect.TabIndex = 41
+        Me.pbLOTRSelect.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -188,6 +226,9 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1052, 686)
+        Me.Controls.Add(Me.pbLOTRSelect)
+        Me.Controls.Add(Me.pbStripPokerSelect)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.pbSeasonsSelect)
@@ -198,13 +239,16 @@ Partial Class Form1
         Me.Controls.Add(Me.btnIncreaseBet)
         Me.Controls.Add(Me.btnDecreaseBet)
         Me.Controls.Add(Me.Panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Ultimate Poker"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.pbSeasonsSelect, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbHeartsSelect, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbClassicSelect, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbStripPokerSelect, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbLOTRSelect, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -220,5 +264,8 @@ Partial Class Form1
     Friend WithEvents pbSeasonsSelect As System.Windows.Forms.PictureBox
     Friend WithEvents pbHeartsSelect As System.Windows.Forms.PictureBox
     Friend WithEvents pbClassicSelect As System.Windows.Forms.PictureBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents pbStripPokerSelect As System.Windows.Forms.PictureBox
+    Friend WithEvents pbLOTRSelect As System.Windows.Forms.PictureBox
 
 End Class
