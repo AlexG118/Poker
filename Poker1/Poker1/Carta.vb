@@ -1,6 +1,7 @@
-﻿Public Class Carta
-        Public Image As Image
-        Public Value As Integer
+﻿'Clase para determinar los valores de cada carta correspondiente a su palo
+Public Class Carta
+    Public Image As Image
+    Public Value As Integer
     Public IsAs As Boolean = False
     Public RawValue As Integer
     Public Suit As CartaSuit

@@ -17,3 +17,4 @@ C:\Users\Sugar\Desktop\Poker-master\Poker1\Poker1\bin\Debug\Poker1.exe
 C:\Users\Sugar\Desktop\Poker-master\Poker1\Poker1\bin\Debug\Poker1.pdb
 C:\Users\Sugar\Desktop\Poker-master\Poker1\Poker1\bin\Debug\Poker1.xml
 C:\Users\Sugar\Desktop\Poker-master\Poker1\Poker1\obj\x86\Debug\Poker1.Form2.resources
+C:\Users\Sugar\Desktop\Poker-master\Poker1\Poker1\obj\x86\Debug\Poker1.Form3.resources

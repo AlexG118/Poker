@@ -75,10 +75,8 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Carta.vb" />
     <Compile Include="CartaJuego.vb" />
-    <Compile Include="CartaProg.vb" />
     <Compile Include="CartasBaraja.vb" />
     <Compile Include="Contabilidad.vb" />
     <Compile Include="Form1.Designer.vb">
@@ -91,6 +89,12 @@
       <DependentUpon>Form2.vb</DependentUpon>
     </Compile>
     <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Misc.vb" />
@@ -120,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -463,42 +470,6 @@
     <None Include="Recursos\SPS13.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SPC11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPC12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPC13.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPD11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPD12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPD13.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPH11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPH12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPH13.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPS11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPS12.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SPS13.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Recursos\StripPokerDeck.png" />
   </ItemGroup>
   <ItemGroup>
@@ -548,6 +519,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon %281%29.ico" />
+    <None Include="Recursos\Form3.jpg" />
+    <None Include="Recursos\chest.png" />
+    <None Include="Recursos\recompensa.png" />
+    <None Include="Recursos\info.png" />
+    <None Include="Recursos\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

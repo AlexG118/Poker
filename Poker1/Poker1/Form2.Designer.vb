@@ -39,7 +39,7 @@ Partial Class Form2
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(455, 50)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "¡Bienvenido!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¿Con que cantidad quiere comenzar el juego?"
+        Me.Label1.Text = "¡Bienvenido a Ultimate Poker!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "¿Con que cantidad quiere comenzar el juego?"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Button1
@@ -90,6 +90,7 @@ Partial Class Form2
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
         Me.Text = "Inicio"
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

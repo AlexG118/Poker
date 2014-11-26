@@ -15,6 +15,10 @@ Poker1
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso con establecimiento inflexible de tipos.
 </summary>
+</member><member name="P:Poker1.My.Resources.Resources._exit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Poker1.My.Resources.Resources.bigwin2">
 	<summary>
   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
@@ -107,6 +111,10 @@ Poker1
 	<summary>
   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
 </summary>
+</member><member name="P:Poker1.My.Resources.Resources.chest">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Poker1.My.Resources.Resources.click">
 	<summary>
   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
@@ -180,6 +188,10 @@ Poker1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Poker1.My.Resources.Resources.Draw">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Poker1.My.Resources.Resources.Form3">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -275,6 +287,10 @@ Poker1
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Poker1.My.Resources.Resources.info">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Poker1.My.Resources.Resources.LC11">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -348,6 +364,10 @@ Poker1
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Poker1.My.Resources.Resources.Poker4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Poker1.My.Resources.Resources.recompensa">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -448,46 +448,61 @@
   <data name="Poker4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Poker4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SPC11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPC11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPC12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPC12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPC13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPC13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPD11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPD11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPD12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPD12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPD13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPD13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPH11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPH11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPH12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPH12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPH13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPH13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPS12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPS12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPS13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPS13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="StripPokerDeck" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\StripPokerDeck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UltPoker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\UltPoker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPC11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPC11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPC12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPC12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPC13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPC13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPD11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPD11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPD12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPD12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPD13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPD13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPH11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPH11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPH12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPH12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPH13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPH13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPS11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPS11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPS12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPS12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SPS13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\SPS13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="recompensa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\recompensa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\chest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Form3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Form3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
